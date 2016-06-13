@@ -1,0 +1,47 @@
+Developing convergent apps on Ubuntu
+QtDay Italy 2016 Presentation by Andrea Bernabei (a.k.a faenil)
+
+Hi :)
+
+This is the sourcecode for the presentation I gave at QtDay Italy 2016, 
+and a few days later at the Ubuntu Online Summit 2016
+
+====DISCLAIMER======
+The QML in this presentation was hacked together in a rush :)
+Do not take the code style or the hacks I used in this presentation
+as good practice. 
+You've been warned :D
+
+====REQUIREMENTS====
+The presentation requires:
+- Qt5.4 and its addon modules
+- qt-qml-presentation-system, which is available as a git submodule
+- Ubuntu Components 1.3, revision >= 1950, this is available at 
+  https://code.launchpad.net/~ubuntu-sdk-team/ubuntu-ui-toolkit/staging
+
+
+====HOWTO: RUN=====
+Once all the requirements are in place, just start the presentation with
+qmlscene qtdaytalk.qml
+
+If you have a high-dpi display, you might want to adjust the size of the 
+Grid Unit (the device independent unit used by Ubuntu Components) using
+GRID_UNIT_PX=16 qmlscene qtdaytalk.qml
+
+
+====HOWTO: LIVECODING====
+This presentation includes livecoding examples.
+
+Once you get to a "Livecoding!" slide, press L on your keyboard to 
+open the livecoding view.
+
+The text editor will be automatically filled with the code sample 
+associated with the current slide. Click on the "Update Item" to 
+trigger the creation of the dynamic item.
+
+The code will be interpreted in realtime and the result will be shown
+on the right side of the livecoding view.
+
+When you're done playing with the code, just click outside of the 
+text area to unfocus it, and then press L to hide the livecoding view
+and go back to the slides :)
